@@ -1,6 +1,6 @@
 //global constants
 const sound = new Audio('https://cdn.glitch.global/1bf68876-a5f3-4284-954b-5c4249c6a68c/Wawa.m4a?v=1650482761812')
-sound.volume = .5
+sound.volume = .1;
 const cluePauseTime = 333; //how long to pause in between clues
 const nextClueWaitTime = 1000; // how long to wait before starting playback of the clue sequence
 
