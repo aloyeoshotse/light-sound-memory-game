@@ -100,7 +100,7 @@ function startTone(btn){
     tonePlaying = true
   }
   if(!tonePlaying){
-   if (btn != pattern[guessCounter]){
+    if (btn != pattern[guessCounter]){
       sound.play();
     } 
     else {
@@ -210,9 +210,7 @@ function guess(btn){
     mistakeCount--;
     if (mistakeCount == 0){
       //Out of tries... LOST GAME!
-      
-      
-      GuessShake(btn,pattern[guessCounter]);
+      wrongGuessShake(btn,pattern[guessCounter]);
       setTimeout(loseGame,clueHoldTime);
       return;
     }
