@@ -45,8 +45,11 @@ The following **additional** features are implemented:
 
 
 ## Reflection Questions
-1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
-[YOUR ANSWER HERE]
+1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here.    
+    https://www.w3schools.com/css//css_font_websafe.asp
+    https://www.w3schools.com/cssref/css_colors.asp
+    https://www.delftstack.com/howto/javascript/play-audio-javascript/
+    https://www.w3schools.com/css/css3_animations.asp
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
 [YOUR ANSWER HERE]
