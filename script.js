@@ -10,14 +10,11 @@ var pattern;
 var progress;
 var gamePlaying = false;
 var tonePlaying = false;
-var wrong = false;
 var sameRound = false; //checks to see if the user is on the same sequence
 var volume = 0.5; //must be between 0.0 and 1.0
 var guessCounter = 0; //keeps track of which button in the sequence the user is on
 var turnChecker; //checks to see which turn the user is on
 var mistakeCount;
-
-
 
 function difficulty(){
   //chooses game difficulty by adjusting sequence length
@@ -83,7 +80,6 @@ const freqMap = {
   4: 436.2,
   5: 483.6
 }
-
 
 function playTone(btn,len){ 
   o.frequency.value = freqMap[btn]
@@ -160,10 +156,8 @@ function playClueSequence(){
     clueHoldTime -= 20;
     turnChecker = 0;
     guessCounter = 0;
-    wrong = false;
   }
   context.resume()
-  wrong = false;
   let delay = nextClueWaitTime; //set delay to intial wait time
   for (let i=0;i<=progress;i++){ //for each clue that is revealed so far
     console.log("play single clue: " + pattern[i] + " in " + delay + "ms")
@@ -210,14 +204,15 @@ function guess(btn){
   turnChecker++;
   if (btn != pattern[guessCounter]){
     //Guess not correct
-    wrong = true;
     sameRound = true;
     turnChecker = 0;
     guessCounter = 0;
     mistakeCount--;
     if (mistakeCount == 0){
       //Out of tries... LOST GAME!
-      wrongGuessShake(btn,pattern[guessCounter]);
+      
+      
+      GuessShake(btn,pattern[guessCounter]);
       setTimeout(loseGame,clueHoldTime);
       return;
     }
