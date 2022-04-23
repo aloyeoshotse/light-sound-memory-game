@@ -71,7 +71,7 @@ If I had a few more hours to work on this project, I would spend them adding mor
 
 ## Interview Recording URL Link
 
-[My 5-minute Interview Recording](your-link-here)
+[My 5-minute Interview Recording](https://vimeo.com/702251004)
 
 
 ## License
